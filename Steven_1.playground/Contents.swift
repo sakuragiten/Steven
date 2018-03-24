@@ -22,6 +22,43 @@ requestStatusMessage
 
 
 //Optionals
+var optionalString : String? = "A String literal"
+optionalString = nil
+
+optionalString = "An optional String"
+print(optionalString!)
+
+let nilName : String? = "gong" //nil
+if let familyName = nilName {
+//    let greetingfamilyName = "Hello, Mr.\(familyName)"
+    print("Hello, Mr.\(familyName)")
+} else {
+    // Optional does not have a value
+    print("Optional does not have a value")
+}
+
+
+//String
+let aVegetable = "Arugula"
+var anEmptyString = ""  //EmptyString
+var anotherEmptyString = String()
+
+if anEmptyString.isEmpty {
+    print("String is empty")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
