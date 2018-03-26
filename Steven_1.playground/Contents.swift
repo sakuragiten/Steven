@@ -232,6 +232,12 @@ let cString  = "asdf"
 cString.count
 
 
+func testOfPerson(name: String, age: Int)->String {
+    return name + "_\(age)"
+}
+
+testOfPerson(name: "steven", age: 18)
+
 
 
 
