@@ -229,22 +229,96 @@ print(result_sum.0, result_sum.1, result_sum.2)
 
 
 let cString  = "asdf"
-cString.count
+//cString.count
 
 
-func testOfPerson(name: String, age: Int)->String {
-    return name + "_\(age)"
+
+
+
+func alignRight(string: String, count: Int, pad: Character) -> String{
+    let amountToPad = count - string.count;
+    if amountToPad < 1 {
+        return string;
+    }
+    let padString = String(pad)
+    var newString = string;
+    for _ in 1...amountToPad {
+        newString = padString + newString;
+    }
+    
+    return newString;
 }
 
-testOfPerson(name: "steven", age: 18)
+let s1 = alignRight(string: "qwer", count: 4, pad: "D")
+let s2 = alignRight(string: "q", count: 4, pad: "D")
 
 
 
+// inout parameters
+func swapTwoInts(a: inout Int, b: inout Int) {
+    let temporaryA = a
+    a = b
+    b = temporaryA
+}
+var aa = 1, bb = 2
+swapTwoInts(a: &aa, b: &bb)
+aa
+bb
+
+// nested functions
+func returnTwenty()-> Int {
+    var y = 10
+    func add() {
+        y += 10
+    }
+    add()
+    return y
+}
+
+let twenty = returnTwenty()
 
 
+// return other functions
+
+func makeIncrementer()-> ((Int)-> Int) {
+    func addOne(number: Int)-> Int {
+        return 1 + number
+    }
+    return addOne
+}
+var increment = makeIncrementer()
+let increment_x = increment(7)
 
 
+//Closures
 
+/*
+ Closures are self-contained blocks of code that provide a specific functionality and can be stored, passed around, and used in the code.
+ */
+
+// As a variable:
+var closureName:(Int)-> (Int)
+
+// As a optional variable
+var anotherClosureName:((Int)-> (Int))?
+
+// As a tyoe alias:
+typealias closureType = (Int)-> (Int)
+
+
+// Map filter reduce  are higher-order functions
+
+
+//map
+//func map<U>(transform:(T)-> U)-> [U]
+let numbers = [10, 30, 91, 50, 100, 39, 74]
+var formattedNumbers: [String] = []
+for number in numbers {
+    let formattedNumber = "\(number)$"
+    formattedNumbers.append(formattedNumber)
+}
+
+let formattedCount = formattedNumbers
 
 
 
