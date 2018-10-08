@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9FC4CA09FA5F947A577361EE /* Pods_StevenNash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD6EA9B5EA6695153E5E753 /* Pods_StevenNash.framework */; };
+		B02C2790216B3A64007A23E5 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C278F216B3A64007A23E5 /* MenuTableViewController.swift */; };
+		B02C2792216B441A007A23E5 /* CircleProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C2791216B441A007A23E5 /* CircleProgressController.swift */; };
+		B02C2794216B48CB007A23E5 /* CircleProgressController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02C2793216B48CB007A23E5 /* CircleProgressController.xib */; };
+		B02C2797216B541A007A23E5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C2796216B541A007A23E5 /* UIViewController+Extension.swift */; };
+		B02C2799216B5A8A007A23E5 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C2798216B5A8A007A23E5 /* NSObject+Extension.swift */; };
 		B077B998208EC79B009F36BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077B997208EC79B009F36BC /* AppDelegate.swift */; };
-		B077B99A208EC79B009F36BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077B999208EC79B009F36BC /* ViewController.swift */; };
 		B077B99D208EC79B009F36BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B077B99B208EC79B009F36BC /* Main.storyboard */; };
 		B077B99F208EC79B009F36BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B077B99E208EC79B009F36BC /* Assets.xcassets */; };
 		B077B9A2208EC79B009F36BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B077B9A0208EC79B009F36BC /* LaunchScreen.storyboard */; };
@@ -19,9 +23,13 @@
 /* Begin PBXFileReference section */
 		6BD5621D2DA2FCD4CCA295F3 /* Pods-StevenNash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StevenNash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StevenNash/Pods-StevenNash.debug.xcconfig"; sourceTree = "<group>"; };
 		6F3291DE9E90B5485C4F3490 /* Pods-StevenNash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StevenNash.release.xcconfig"; path = "Pods/Target Support Files/Pods-StevenNash/Pods-StevenNash.release.xcconfig"; sourceTree = "<group>"; };
+		B02C278F216B3A64007A23E5 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		B02C2791216B441A007A23E5 /* CircleProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressController.swift; sourceTree = "<group>"; };
+		B02C2793216B48CB007A23E5 /* CircleProgressController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleProgressController.xib; sourceTree = "<group>"; };
+		B02C2796216B541A007A23E5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		B02C2798216B5A8A007A23E5 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		B077B994208EC79B009F36BC /* StevenNash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StevenNash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B077B997208EC79B009F36BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B077B999208EC79B009F36BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B077B99C208EC79B009F36BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B077B99E208EC79B009F36BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B077B9A1208EC79B009F36BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +50,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B02C278E216B3A3C007A23E5 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B02C278F216B3A64007A23E5 /* MenuTableViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		B02C2795216B5401007A23E5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B02C2796216B541A007A23E5 /* UIViewController+Extension.swift */,
+				B02C2798216B5A8A007A23E5 /* NSObject+Extension.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		B077B98B208EC79B009F36BC = {
 			isa = PBXGroup;
 			children = (
@@ -75,9 +100,10 @@
 		B08D6287215375370096C1F8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B02C2795216B5401007A23E5 /* Categories */,
 				B08D6289215375590096C1F8 /* Appdelegate */,
+				B02C278E216B3A3C007A23E5 /* Menu */,
 				B08D6288215375370096C1F8 /* Progress */,
-				B077B999208EC79B009F36BC /* ViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -85,6 +111,8 @@
 		B08D6288215375370096C1F8 /* Progress */ = {
 			isa = PBXGroup;
 			children = (
+				B02C2791216B441A007A23E5 /* CircleProgressController.swift */,
+				B02C2793216B48CB007A23E5 /* CircleProgressController.xib */,
 				B08D628A215376680096C1F8 /* CircleProgressView.swift */,
 			);
 			path = Progress;
@@ -143,11 +171,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = gongsheng;
 				TargetAttributes = {
 					B077B993208EC79B009F36BC = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -175,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02C2794216B48CB007A23E5 /* CircleProgressController.xib in Resources */,
 				B077B9A2208EC79B009F36BC /* LaunchScreen.storyboard in Resources */,
 				B077B99F208EC79B009F36BC /* Assets.xcassets in Resources */,
 				B077B99D208EC79B009F36BC /* Main.storyboard in Resources */,
@@ -209,9 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B077B99A208EC79B009F36BC /* ViewController.swift in Sources */,
+				B02C2790216B3A64007A23E5 /* MenuTableViewController.swift in Sources */,
 				B077B998208EC79B009F36BC /* AppDelegate.swift in Sources */,
+				B02C2792216B441A007A23E5 /* CircleProgressController.swift in Sources */,
+				B02C2797216B541A007A23E5 /* UIViewController+Extension.swift in Sources */,
 				B08D628B215376680096C1F8 /* CircleProgressView.swift in Sources */,
+				B02C2799216B5A8A007A23E5 /* NSObject+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +284,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -258,6 +292,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -308,6 +343,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -315,6 +351,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -352,11 +389,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37G28R6NSU;
 				INFOPLIST_FILE = StevenNash/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gongsheng.StevenNash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -369,11 +406,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37G28R6NSU;
 				INFOPLIST_FILE = StevenNash/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gongsheng.StevenNash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

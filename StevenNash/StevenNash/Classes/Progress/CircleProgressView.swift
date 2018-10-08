@@ -13,14 +13,14 @@ class CircleProgressView: UIView {
     //进度
     var progress : CGFloat = 0.0 {
         didSet {
-            print("test")
+            resetLayerWithProgress(progress)
         }
     }
     
     //进度条的颜色
     var progressColor : UIColor = .red
     
-    var progressLayer : CAShapeLayer?
+    private var progressLayer : CAShapeLayer?
     
     
     
@@ -29,6 +29,23 @@ class CircleProgressView: UIView {
         path.lineWidth = 1.0
         UIColor.lightGray.setStroke()
         path.stroke()
+    }
+    
+    
+    private func resetLayerWithProgress(_ progress : CGFloat) {
+        
+        let path = circlrPathWithProgress(Double(progress))
+        if progressLayer == nil {
+            progressLayer = CAShapeLayer()
+            progressLayer?.strokeColor = self.progressColor.cgColor
+            progressLayer?.fillColor = UIColor.clear.cgColor
+            progressLayer?.lineWidth = 3.0
+            self.layer.addSublayer(progressLayer!)
+        }
+        progressLayer?.path = path.cgPath
+
+
+        
     }
     
     private func circlrPathWithProgress(_ progress : Double) -> UIBezierPath {
