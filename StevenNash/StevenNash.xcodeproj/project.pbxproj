@@ -13,6 +13,7 @@
 		B02C2794216B48CB007A23E5 /* CircleProgressController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02C2793216B48CB007A23E5 /* CircleProgressController.xib */; };
 		B02C2797216B541A007A23E5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C2796216B541A007A23E5 /* UIViewController+Extension.swift */; };
 		B02C2799216B5A8A007A23E5 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C2798216B5A8A007A23E5 /* NSObject+Extension.swift */; };
+		B02C279B216C4941007A23E5 /* FanshapedProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C279A216C4941007A23E5 /* FanshapedProgressView.swift */; };
 		B077B998208EC79B009F36BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077B997208EC79B009F36BC /* AppDelegate.swift */; };
 		B077B99D208EC79B009F36BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B077B99B208EC79B009F36BC /* Main.storyboard */; };
 		B077B99F208EC79B009F36BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B077B99E208EC79B009F36BC /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		B02C2793216B48CB007A23E5 /* CircleProgressController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleProgressController.xib; sourceTree = "<group>"; };
 		B02C2796216B541A007A23E5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		B02C2798216B5A8A007A23E5 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		B02C279A216C4941007A23E5 /* FanshapedProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanshapedProgressView.swift; sourceTree = "<group>"; };
 		B077B994208EC79B009F36BC /* StevenNash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StevenNash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B077B997208EC79B009F36BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B077B99C208EC79B009F36BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				B02C2791216B441A007A23E5 /* CircleProgressController.swift */,
 				B02C2793216B48CB007A23E5 /* CircleProgressController.xib */,
 				B08D628A215376680096C1F8 /* CircleProgressView.swift */,
+				B02C279A216C4941007A23E5 /* FanshapedProgressView.swift */,
 			);
 			path = Progress;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				B02C2797216B541A007A23E5 /* UIViewController+Extension.swift in Sources */,
 				B08D628B215376680096C1F8 /* CircleProgressView.swift in Sources */,
 				B02C2799216B5A8A007A23E5 /* NSObject+Extension.swift in Sources */,
+				B02C279B216C4941007A23E5 /* FanshapedProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

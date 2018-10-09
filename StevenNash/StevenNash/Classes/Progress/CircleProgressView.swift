@@ -43,9 +43,7 @@ class CircleProgressView: UIView {
             self.layer.addSublayer(progressLayer!)
         }
         progressLayer?.path = path.cgPath
-
-
-        
+  
     }
     
     private func circlrPathWithProgress(_ progress : Double) -> UIBezierPath {
