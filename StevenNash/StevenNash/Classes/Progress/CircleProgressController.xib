@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.14117647059999999" green="0.73725490199999999" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                        <state key="normal" title="Test">
+                        <state key="normal" title="Test++">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
                         <connections>
@@ -33,6 +33,9 @@
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <viewLayoutGuide key="safeArea" id="Z3J-Hg-6pB"/>
             </view>
+            <connections>
+                <outlet property="testBtn" destination="f6Q-FN-bjd" id="gr7-X4-3UD"/>
+            </connections>
             <point key="canvasLocation" x="-146.40000000000001" y="-147.07646176911544"/>
         </viewController>
     </objects>

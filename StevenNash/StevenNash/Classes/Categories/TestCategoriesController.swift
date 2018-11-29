@@ -1,33 +1,33 @@
 //
-//  MenuTableViewController.swift
+//  TestCategoriesController.swift
 //  StevenNash
 //
-//  Created by gongsheng on 2018/10/8.
+//  Created by gongsheng on 2018/10/18.
 //  Copyright © 2018 gongsheng. All rights reserved.
 //
 
 import UIKit
 
-class MenuTableViewController: UITableViewController {
+class TestCategoriesController: UITableViewController {
     
-    private var dataArray = ["TestCategoriesController", "CircleProgressController", "ProtocolController"]
-
+    private var dataArray = ["TestImageController"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         self.title = "Test"
     }
-
+    
 }
 
 // MARK: - Table view data source
-extension MenuTableViewController {
+extension TestCategoriesController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -50,14 +50,13 @@ extension MenuTableViewController {
 }
 
 // MARK: - Table View delegate
-extension MenuTableViewController {
+extension TestCategoriesController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // swift4中通过字符串名转化成类，需要在字符串名前加上项目的名称
-//        let bundleName = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String
-//        let className = bundleName! + "." + dataArray[indexPath.row]
+        //        let bundleName = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String
+        //        let className = bundleName! + "." + dataArray[indexPath.row]
         let vcName = getClassFromString(dataArray[indexPath.row]) as! UIViewController.Type
-        let vc = indexPath.row > 0 ? vcName.instanceFromeXib() : TestCategoriesController()
-        
+        let vc = vcName.instanceFromeXib()
         vc.title = dataArray[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }

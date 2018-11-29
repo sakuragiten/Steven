@@ -9,7 +9,8 @@
 import UIKit
 
 class CircleProgressController: UIViewController {
-
+    @IBOutlet weak var testBtn: UIButton!
+    
     private var circleView : CircleProgressView?
     
     private var fanView: FanshapedProgressView!

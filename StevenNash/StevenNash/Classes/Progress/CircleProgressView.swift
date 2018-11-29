@@ -56,7 +56,6 @@ class CircleProgressView: UIView {
         
         let path = UIBezierPath(arcCenter: original, radius: radius, startAngle: CGFloat(startAngle), endAngle: CGFloat(endAngle), clockwise: true)
         
-        
         return path
     }
     
