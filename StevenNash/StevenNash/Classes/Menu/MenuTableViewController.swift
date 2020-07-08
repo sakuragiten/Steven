@@ -10,7 +10,7 @@ import UIKit
 
 class MenuTableViewController: UITableViewController {
     
-    private var dataArray = ["TestCategoriesController", "CircleProgressController", "ProtocolController"]
+    private var dataArray = ["RxIndexController", "TestCategoriesController", "CircleProgressController", "ProtocolController"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,7 @@ extension MenuTableViewController {
             cell?.selectionStyle = .none
         }
         cell?.textLabel?.text = dataArray[indexPath.row]
-        
+        cell?.textLabel?.font = UIFont.systemFont(ofSize: 12)
         return cell!
         
     }
@@ -56,8 +56,7 @@ extension MenuTableViewController {
 //        let bundleName = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String
 //        let className = bundleName! + "." + dataArray[indexPath.row]
         let vcName = getClassFromString(dataArray[indexPath.row]) as! UIViewController.Type
-        let vc = indexPath.row > 0 ? vcName.instanceFromeXib() : TestCategoriesController()
-        
+        let vc = indexPath.row > 1 ? vcName.instanceFromeXib() : vcName.init()
         vc.title = dataArray[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }

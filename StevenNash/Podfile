@@ -6,5 +6,9 @@ target 'StevenNash' do
   use_frameworks!
 
   # Pods for StevenNash
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
+  pod 'lottie-ios'
+  
 end
