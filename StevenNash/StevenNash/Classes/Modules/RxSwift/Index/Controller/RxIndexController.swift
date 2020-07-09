@@ -37,20 +37,32 @@ class RxIndexController: ViewController {
     }
     
     private func bindView() {
-        let items = Observable.just(
-            (0..<20).map{"\($0)"}
-        )
         
-        items
-            .bind(to: tableView.rx.items(cellIdentifier: "reuseCell", cellType: UITableViewCell.self)) { (row, element, cell) in
-                cell.textLabel?.text = "line of number \(element)"
+        
+        let dataArray:Observable<[RxIndexModel]> = Observable.from(optional: RxIndexModel.example())
+        
+        dataArray.bind(to: tableView.rx.items(cellIdentifier: "reuseCell", cellType: UITableViewCell.self)){ (_, element, cell) in
+            cell.textLabel?.text = element.title
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 13)
         }.disposed(by: disposeBag)
+//        let items = Observable.just(
+//            (0..<20).map{"\($0)"}
+//        )
         
+//        items
+//            .bind(to: tableView.rx.items(cellIdentifier: "reuseCell", cellType: UITableViewCell.self)) { (row, element, cell) in
+//                cell.textLabel?.text = "line of number \(element)"
+//        }.disposed(by: disposeBag)
+//
         
         tableView.rx
-            .modelSelected(String.self)
+            .modelSelected(RxIndexModel.self)
             .subscribe(onNext: { value in
-                print("Tapped '\(value)'")
+//                let vcName = getClassFromString(dataArray[indexPath.row]) as! UIViewController.Type
+                let vcClass = self.getClassFromString(value.className) as! UIViewController.Type
+                let vc = vcClass.init()
+                vc.title = value.title
+                self.navigationController?.pushViewController(vc, animated: true)
             })
             .disposed(by: disposeBag)
     }

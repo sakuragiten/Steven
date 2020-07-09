@@ -25,8 +25,10 @@ class RxIndexModel {
 //            [[""], [""]].enumerated().map{self.init(title: $0, className: $1)}
 //        )
         
-        let model = RxIndexModel.init(title: "lesson_1", className: "class_1")
+        let model = RxIndexModel.init(title: "lesson_1", className: "RxTableViewBindController")
         
-        return [model]
+        var result = [RxIndexModel]()
+        result.append(model )
+        return result
     }
 }

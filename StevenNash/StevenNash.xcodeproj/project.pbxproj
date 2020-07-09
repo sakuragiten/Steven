@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4441CCF624B6CB1300728A31 /* RxTableViewBindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4441CCF524B6CB1300728A31 /* RxTableViewBindController.swift */; };
 		4479E8E32493AFE000B185B6 /* WonderfulMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479E8E22493AFE000B185B6 /* WonderfulMacro.swift */; };
 		4479E8E92493B36F00B185B6 /* RxIndexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479E8E82493B36F00B185B6 /* RxIndexController.swift */; };
 		4479E8EB2493B61D00B185B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479E8EA2493B61D00B185B6 /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4441CCF524B6CB1300728A31 /* RxTableViewBindController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewBindController.swift; sourceTree = "<group>"; };
 		4479E8E22493AFE000B185B6 /* WonderfulMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonderfulMacro.swift; sourceTree = "<group>"; };
 		4479E8E82493B36F00B185B6 /* RxIndexController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxIndexController.swift; sourceTree = "<group>"; };
 		4479E8EA2493B61D00B185B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4441CCF424B6CAD700728A31 /* BindTableView */ = {
+			isa = PBXGroup;
+			children = (
+				4441CCF524B6CB1300728A31 /* RxTableViewBindController.swift */,
+			);
+			path = BindTableView;
+			sourceTree = "<group>";
+		};
 		4479E8E12493AF5400B185B6 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 		4479E8E52493B02300B185B6 /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				4441CCF424B6CAD700728A31 /* BindTableView */,
 				4479E8E62493B08900B185B6 /* Index */,
 			);
 			path = RxSwift;
@@ -395,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4441CCF624B6CB1300728A31 /* RxTableViewBindController.swift in Sources */,
 				4479E8EE24946B2600B185B6 /* RxIndexModel.swift in Sources */,
 				4479E8EB2493B61D00B185B6 /* ViewController.swift in Sources */,
 				4479E8E92493B36F00B185B6 /* RxIndexController.swift in Sources */,
