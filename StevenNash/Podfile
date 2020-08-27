@@ -10,5 +10,6 @@ target 'StevenNash' do
   pod 'RxCocoa'
 
   pod 'lottie-ios'
+  pod 'SnapKit'
   
 end

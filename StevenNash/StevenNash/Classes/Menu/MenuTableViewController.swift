@@ -10,8 +10,12 @@ import UIKit
 
 class MenuTableViewController: UITableViewController {
     
-    private var dataArray = ["RxIndexController", "TestCategoriesController", "CircleProgressController", "ProtocolController"]
-
+    private var dataArray = ["RxIndexController", "TestLottieController", "TestCategoriesController", "CircleProgressController", "ProtocolController"]
+    private var dataSource = [("RxSwift", "RxIndexController"),
+                              ("Lottie", "TestLottieController"),
+                              ("Categories", "TestCategoriesController"),
+                              ("Progress", "CircleProgressController"),
+                              ("Protocol", "ProtocolController")]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,7 +46,8 @@ extension MenuTableViewController {
             cell = UITableViewCell.init(style: .default, reuseIdentifier: "menu_cell")
             cell?.selectionStyle = .none
         }
-        cell?.textLabel?.text = dataArray[indexPath.row]
+        let (key, _) = dataSource[indexPath.row]
+        cell?.textLabel?.text = key
         cell?.textLabel?.font = UIFont.systemFont(ofSize: 12)
         return cell!
         
@@ -55,8 +60,9 @@ extension MenuTableViewController {
         // swift4中通过字符串名转化成类，需要在字符串名前加上项目的名称
 //        let bundleName = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String
 //        let className = bundleName! + "." + dataArray[indexPath.row]
-        let vcName = getClassFromString(dataArray[indexPath.row]) as! UIViewController.Type
-        let vc = indexPath.row > 1 ? vcName.instanceFromeXib() : vcName.init()
+        let (_, value) = dataSource[indexPath.row]
+        let vcName = getClassFromString(value) as! UIViewController.Type
+        let vc = indexPath.row > 2 ? vcName.instanceFromeXib() : vcName.init()
         vc.title = dataArray[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }

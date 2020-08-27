@@ -12,6 +12,16 @@
 		4479E8E92493B36F00B185B6 /* RxIndexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479E8E82493B36F00B185B6 /* RxIndexController.swift */; };
 		4479E8EB2493B61D00B185B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479E8EA2493B61D00B185B6 /* ViewController.swift */; };
 		4479E8EE24946B2600B185B6 /* RxIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479E8ED24946B2600B185B6 /* RxIndexModel.swift */; };
+		44A9717824B811810028ADAC /* RxBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A9717724B811810028ADAC /* RxBasicViewController.swift */; };
+		44A9717D24B847010028ADAC /* TestLottieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A9717C24B847010028ADAC /* TestLottieController.swift */; };
+		44A9718924B84A650028ADAC /* img_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 44A9718124B84A650028ADAC /* img_1.png */; };
+		44A9718A24B84A650028ADAC /* img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 44A9718224B84A650028ADAC /* img_0.png */; };
+		44A9718B24B84A650028ADAC /* img_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 44A9718324B84A650028ADAC /* img_2.png */; };
+		44A9718C24B84A650028ADAC /* img_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 44A9718424B84A650028ADAC /* img_3.png */; };
+		44A9718D24B84A650028ADAC /* img_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 44A9718524B84A650028ADAC /* img_6.png */; };
+		44A9718E24B84A650028ADAC /* img_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 44A9718624B84A650028ADAC /* img_4.png */; };
+		44A9718F24B84A650028ADAC /* img_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 44A9718724B84A650028ADAC /* img_5.png */; };
+		44A9719024B84A650028ADAC /* girlbutterfly.json in Resources */ = {isa = PBXBuildFile; fileRef = 44A9718824B84A650028ADAC /* girlbutterfly.json */; };
 		9FC4CA09FA5F947A577361EE /* Pods_StevenNash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD6EA9B5EA6695153E5E753 /* Pods_StevenNash.framework */; };
 		B02C2790216B3A64007A23E5 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C278F216B3A64007A23E5 /* MenuTableViewController.swift */; };
 		B02C2792216B441A007A23E5 /* CircleProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C2791216B441A007A23E5 /* CircleProgressController.swift */; };
@@ -40,6 +50,16 @@
 		4479E8E82493B36F00B185B6 /* RxIndexController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxIndexController.swift; sourceTree = "<group>"; };
 		4479E8EA2493B61D00B185B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4479E8ED24946B2600B185B6 /* RxIndexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxIndexModel.swift; sourceTree = "<group>"; };
+		44A9717724B811810028ADAC /* RxBasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBasicViewController.swift; sourceTree = "<group>"; };
+		44A9717C24B847010028ADAC /* TestLottieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLottieController.swift; sourceTree = "<group>"; };
+		44A9718124B84A650028ADAC /* img_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_1.png; sourceTree = "<group>"; };
+		44A9718224B84A650028ADAC /* img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_0.png; sourceTree = "<group>"; };
+		44A9718324B84A650028ADAC /* img_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_2.png; sourceTree = "<group>"; };
+		44A9718424B84A650028ADAC /* img_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_3.png; sourceTree = "<group>"; };
+		44A9718524B84A650028ADAC /* img_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_6.png; sourceTree = "<group>"; };
+		44A9718624B84A650028ADAC /* img_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_4.png; sourceTree = "<group>"; };
+		44A9718724B84A650028ADAC /* img_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_5.png; sourceTree = "<group>"; };
+		44A9718824B84A650028ADAC /* girlbutterfly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = girlbutterfly.json; sourceTree = "<group>"; };
 		6BD5621D2DA2FCD4CCA295F3 /* Pods-StevenNash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StevenNash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StevenNash/Pods-StevenNash.debug.xcconfig"; sourceTree = "<group>"; };
 		6F3291DE9E90B5485C4F3490 /* Pods-StevenNash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StevenNash.release.xcconfig"; path = "Pods/Target Support Files/Pods-StevenNash/Pods-StevenNash.release.xcconfig"; sourceTree = "<group>"; };
 		B02C278F216B3A64007A23E5 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +118,7 @@
 		4479E8E42493B00500B185B6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				44A9717924B846D50028ADAC /* Animation */,
 				4479E8E52493B02300B185B6 /* RxSwift */,
 			);
 			path = Modules;
@@ -106,6 +127,7 @@
 		4479E8E52493B02300B185B6 /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				44A9717524B8112F0028ADAC /* BaseView */,
 				4441CCF424B6CAD700728A31 /* BindTableView */,
 				4479E8E62493B08900B185B6 /* Index */,
 			);
@@ -135,6 +157,62 @@
 				4479E8ED24946B2600B185B6 /* RxIndexModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		44A9717524B8112F0028ADAC /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				44A9717724B811810028ADAC /* RxBasicViewController.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		44A9717924B846D50028ADAC /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				44A9717A24B846DF0028ADAC /* Lottie */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		44A9717A24B846DF0028ADAC /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				44A9717C24B847010028ADAC /* TestLottieController.swift */,
+				44A9717E24B84A590028ADAC /* File */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		44A9717E24B84A590028ADAC /* File */ = {
+			isa = PBXGroup;
+			children = (
+				44A9717F24B84A650028ADAC /* frame_lv1_girlbutterfly */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		44A9717F24B84A650028ADAC /* frame_lv1_girlbutterfly */ = {
+			isa = PBXGroup;
+			children = (
+				44A9718024B84A650028ADAC /* images */,
+				44A9718824B84A650028ADAC /* girlbutterfly.json */,
+			);
+			path = frame_lv1_girlbutterfly;
+			sourceTree = "<group>";
+		};
+		44A9718024B84A650028ADAC /* images */ = {
+			isa = PBXGroup;
+			children = (
+				44A9718124B84A650028ADAC /* img_1.png */,
+				44A9718224B84A650028ADAC /* img_0.png */,
+				44A9718324B84A650028ADAC /* img_2.png */,
+				44A9718424B84A650028ADAC /* img_3.png */,
+				44A9718524B84A650028ADAC /* img_6.png */,
+				44A9718624B84A650028ADAC /* img_4.png */,
+				44A9718724B84A650028ADAC /* img_5.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		B02C278E216B3A3C007A23E5 /* Menu */ = {
@@ -345,12 +423,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B02C2794216B48CB007A23E5 /* CircleProgressController.xib in Resources */,
+				44A9718924B84A650028ADAC /* img_1.png in Resources */,
+				44A9718D24B84A650028ADAC /* img_6.png in Resources */,
+				44A9719024B84A650028ADAC /* girlbutterfly.json in Resources */,
 				B077B9A2208EC79B009F36BC /* LaunchScreen.storyboard in Resources */,
 				B02C27A2216C8544007A23E5 /* ProtocolController.xib in Resources */,
 				B0A67184217832C8009F539D /* girl.jpg in Resources */,
 				B0A6718021782FE6009F539D /* TestImageController.xib in Resources */,
+				44A9718E24B84A650028ADAC /* img_4.png in Resources */,
+				44A9718B24B84A650028ADAC /* img_2.png in Resources */,
+				44A9718F24B84A650028ADAC /* img_5.png in Resources */,
 				B077B99F208EC79B009F36BC /* Assets.xcassets in Resources */,
 				B077B99D208EC79B009F36BC /* Main.storyboard in Resources */,
+				44A9718A24B84A650028ADAC /* img_0.png in Resources */,
+				44A9718C24B84A650028ADAC /* img_3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +453,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -374,6 +461,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +501,7 @@
 				B0A6717A21782F08009F539D /* TestCategoriesController.swift in Sources */,
 				B02C2790216B3A64007A23E5 /* MenuTableViewController.swift in Sources */,
 				B077B998208EC79B009F36BC /* AppDelegate.swift in Sources */,
+				44A9717824B811810028ADAC /* RxBasicViewController.swift in Sources */,
 				B0A6717F21782FE6009F539D /* TestImageController.swift in Sources */,
 				B02C279E216C7FF0007A23E5 /* Emitterable.swift in Sources */,
 				B02C2792216B441A007A23E5 /* CircleProgressController.swift in Sources */,
@@ -420,6 +509,7 @@
 				4479E8E32493AFE000B185B6 /* WonderfulMacro.swift in Sources */,
 				B02C27A1216C8544007A23E5 /* ProtocolController.swift in Sources */,
 				B02C2797216B541A007A23E5 /* UIViewController+Extension.swift in Sources */,
+				44A9717D24B847010028ADAC /* TestLottieController.swift in Sources */,
 				B08D628B215376680096C1F8 /* CircleProgressView.swift in Sources */,
 				B02C2799216B5A8A007A23E5 /* NSObject+Extension.swift in Sources */,
 				B02C279B216C4941007A23E5 /* FanshapedProgressView.swift in Sources */,
