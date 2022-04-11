@@ -22,8 +22,6 @@ class RxIndexController: ViewController {
         setupUI()
         bindView()
         
-//        RxIndexModel.example(<#T##self: RxIndexModel##RxIndexModel#>)
-        
         closureTest {
             print("xixixixixi")
             print($0)
