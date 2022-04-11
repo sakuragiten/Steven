@@ -22,6 +22,15 @@ class TestLottieController: ViewController {
     
     
     private func setupView() {
+        let animationView = AnimationView(name: "rose")
+        animationView.loopMode = .loop
+       
+        animationView.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight)
+        self.view.addSubview(animationView)
+        animationView.play()
+    }
+    
+    private func setupView1() {
         let queue = DispatchQueue.global()
         let group = DispatchGroup()
         let semaphore = DispatchSemaphore(value: 5)
@@ -51,3 +60,5 @@ class TestLottieController: ViewController {
         }
     }
 }
+
+

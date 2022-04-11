@@ -8,8 +8,15 @@
 
 import UIKit
 
+
+protocol TableViewInputCellDelegate: class {
+    func inputChanged(cell: GSTodoTableViewCell, text: String)
+}
+
 class GSTodoTableViewCell: UITableViewCell {
 
+    weak var delegate: TableViewInputCellDelegate?
+    @IBOutlet weak var textField: UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +26,9 @@ class GSTodoTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    @IBAction func editingChanged(_ sender: UITextField) {
+        delegate?.inputChanged(cell: self, text: sender.text ?? "")
     }
     
 }

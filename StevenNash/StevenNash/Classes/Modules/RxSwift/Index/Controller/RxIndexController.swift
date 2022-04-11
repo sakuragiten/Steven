@@ -24,7 +24,22 @@ class RxIndexController: ViewController {
         
 //        RxIndexModel.example(<#T##self: RxIndexModel##RxIndexModel#>)
         
+        closureTest {
+            print("xixixixixi")
+            print($0)
+            return "LLLLLLLLLL"
+        }
+        
+        
     }
+    
+    func closureTest(closure: (_ s1: String) -> String) {
+        print("111111111111111")
+        let res = closure("TTTTTT")
+        print(res)
+    }
+    
+    
     
 
     

@@ -15,7 +15,8 @@ class MenuTableViewController: UITableViewController {
                               ("Lottie", "TestLottieController"),
                               ("Categories", "TestCategoriesController"),
                               ("Progress", "CircleProgressController"),
-                              ("Protocol", "ProtocolController")]
+                              ("Protocol", "ProtocolController"),
+                              ("MVC", "GSToDoViewController")]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,7 +38,7 @@ extension MenuTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataArray.count
+        return dataSource.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -62,8 +63,17 @@ extension MenuTableViewController {
 //        let className = bundleName! + "." + dataArray[indexPath.row]
         let (_, value) = dataSource[indexPath.row]
         let vcName = getClassFromString(value) as! UIViewController.Type
-        let vc = indexPath.row > 2 ? vcName.instanceFromeXib() : vcName.init()
-        vc.title = dataArray[indexPath.row]
-        navigationController?.pushViewController(vc, animated: true)
+        var vc: UIViewController?
+        if (Bundle.main.path(forResource: value, ofType: "nib") != nil) {
+            vc = vcName.instanceFromeXib()
+        } else {
+            vc = vcName.init()
+        }
+        
+        
+//        let vc = indexPath.row > 2 ? vcName.instanceFromeXib() : vcName.init()
+        let (name, _) = dataSource[indexPath.row]
+        vc?.title = name
+        navigationController?.pushViewController(vc!, animated: true)
     }
 }
